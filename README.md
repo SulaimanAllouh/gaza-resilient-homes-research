@@ -6,6 +6,22 @@
 
 For example, 265 households reported drinking-water storage below 250 litres. Of the 302 surveyed households, 279 reported a capacity category and 23 answered that they did not know it. The appropriate percentage is **265/279 = 95.0%**, rounded to one decimal place. The dictionary explains the denominator and why a stated unknown must not be counted as zero (V22, Table 4.7 and note, printed pp. 82–83; PDF pp. 99–100).
 
+## Use the indicators in R
+
+[Download gazahomes 0.0.1](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/download/gazahomes-v0.0.1/gazahomes_0.0.1.tar.gz) · [Package release and check log](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/tag/gazahomes-v0.0.1) · [Installation guide](docs/gazahomes/release-0.0.1.md) · [Cite the software (BibTeX)](docs/gazahomes/CITATION-0.0.1.bib)
+
+Install the downloaded `gazahomes_0.0.1.tar.gz` from the R console, then check the nine published percentages:
+
+```r
+install.packages(file.choose(), repos = NULL, type = "source")
+x <- gazahomes::check_indicators()
+stopifnot(nrow(x) == 9L, all(x$ok))
+x[x$indicator_id == "drinking_storage_below250",
+  c("numerator", "denominator", "excluded_unknown", "reported_pct")]
+```
+
+The last line returns 265, 279, 23 and 95.0% for the storage example above. Use `gazahomes::home_dictionary()` for the bilingual definitions and source pointers. Use version **0.0.1** when citing the R package and **0.1.0** when citing the research companion.
+
 ## Explore the findings
 
 | What you want to do | File |

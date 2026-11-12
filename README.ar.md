@@ -6,6 +6,22 @@
 
 **لماذا نبيّن المقام بجوار النسبة؟** أفادت 265 أسرة بأن سعة تخزين مياه الشرب لديها أقل من 250 لترًا. عرفنا فئة السعة لدى 279 أسرة من أصل 302، وأجابت 23 أسرة بأن السعة غير معروفة. لذلك كانت النسبة **265 من 279، أي 95.0%** بعد التقريب. لا تعني الإجابة «غير معروف» أن السعة صفر. المصدر: النسخة V22، الجدول 4.7 وملاحظته، ص 82–83 (الصفحتان 99–100 في PDF).
 
+## كيف أستخدم المؤشرات من داخل R؟
+
+[تنزيل حزمة gazahomes 0.0.1](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/download/gazahomes-v0.0.1/gazahomes_0.0.1.tar.gz) · [الإصدار وسجل الفحص](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/tag/gazahomes-v0.0.1) · [دليل التثبيت](docs/gazahomes/release-0.0.1.md) · [الاستشهاد بالحزمة (BibTeX)](docs/gazahomes/CITATION-0.0.1.bib)
+
+نزّل الملف `gazahomes_0.0.1.tar.gz`، ثم شغّل الأوامر التالية في نافذة R واختر الملف عند الطلب. يتحقق المثال من النسب التسع، ثم يعرض أعداد مؤشر سعة تخزين مياه الشرب:
+
+```r
+install.packages(file.choose(), repos = NULL, type = "source")
+x <- gazahomes::check_indicators()
+stopifnot(nrow(x) == 9L, all(x$ok))
+x[x$indicator_id == "drinking_storage_below250",
+  c("numerator", "denominator", "excluded_unknown", "reported_pct")]
+```
+
+اقرأ السطر الأخير هكذا: البسط 265، والمقام 279، وعدد الإجابات «غير معروف» 23، والنسبة 95.0%. يتيح لك `gazahomes::home_dictionary()` الرجوع إلى تعريف كل مؤشر باللغتين ومصدره. عند الاستشهاد بالبرنامج استخدم إصدار الحزمة **0.0.1**، وعند الاستشهاد بملفات المشروع البحثي استخدم **0.1.0**.
+
 ## من أين أبدأ؟
 
 | الغرض | الملف |
