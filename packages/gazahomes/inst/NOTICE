@@ -1,0 +1,14 @@
+gazahomes version 0.0.1 (private development candidate)
+New package code, help pages and tests: MIT; see licenses/MIT.txt.
+The two CSV files in extdata/ are unchanged from:
+Sulaiman M. S. Allouh (2026), Gaza Resilient Homes Research: selected
+household indicators, v0.1.0, commit 3798193882f5effbbfd03e1e9da926ca06e28fd8.
+https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/tag/v0.1.0
+
+Attribution: (c) 2026 Sulaiman M. S. Allouh. The released tables,
+descriptions, selection and arrangement are licensed under CC BY 4.0
+to the extent the licensor holds applicable rights; credits do not imply
+endorsement. See licenses/CC-BY-4.0.txt; https://creativecommons.org/licenses/by/4.0/ .
+These terms do not give access to participant data, interview records or
+the complete manuscript, and do not assign exclusive rights in bare facts.
+In the source tree these files are under inst/extdata and inst/licenses.

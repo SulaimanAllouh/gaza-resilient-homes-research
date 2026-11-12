@@ -1,0 +1,16 @@
+Package: gazahomes
+Type: Package
+Title: Explore Published Household Indicators from a Gaza Housing Study
+Version: 0.0.1
+Authors@R: person("Sulaiman M. S.", "Allouh", role = c("aut", "cre"),
+    email = "me@sulaimanallouh.com")
+Description: Read nine published aggregate household indicators and their
+    bilingual question dictionary from a Gaza housing study. Reconcile
+    denominators with recorded exclusions and check reported percentages
+    against the released counts. The included records are aggregate data;
+    the package does not contain individual participant records.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0.0)
+Imports: utils
+URL: https://github.com/SulaimanAllouh/gaza-resilient-homes-research

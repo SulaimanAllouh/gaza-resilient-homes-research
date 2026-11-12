@@ -1,0 +1,16 @@
+bibentry(
+    bibtype = "Manual",
+    title = "Gaza Resilient Homes Research: Selected Household Indicators",
+    author = person("Sulaiman M. S.", "Allouh"),
+    year = "2026",
+    note = "Public research companion v0.1.0",
+    url = "https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/tag/v0.1.0"
+)
+bibentry(
+    bibtype = "MastersThesis",
+    title = "A Practical Framework for Building Resilient and Sustainable Homes in War-Affected Regions: A Gaza Case Study",
+    author = person("Sulaiman M. S.", "Allouh"),
+    year = "2026",
+    school = "The Islamic University--Gaza",
+    note = "October 2026 manuscript; cite the relevant table and printed page for an empirical finding."
+)
