@@ -1,0 +1,17 @@
+{
+  "source_id": "V22",
+  "filename": "Thesis_V22.pdf",
+  "sha256": "524e01a281eecf22edce3f80d0b279fa20651191f677616c55f9c23899feee33",
+  "bytes": 2200646,
+  "pdf_pages": 221,
+  "title": "A Practical Framework for Building Resilient and Sustainable Homes in War-Affected Regions: A Gaza Case Study",
+  "author": "Sulaiman M. S. Allouh",
+  "supervisor": "Prof. Dr. Nabil Elsawalhi",
+  "institution": "The Islamic University–Gaza",
+  "cover_date": "October 2026",
+  "source_type": "Master of Science thesis, Civil Engineering – Engineering Projects Management",
+  "release_candidate": "0.1.0-rc.1",
+  "freeze_date": "2026-11-11",
+  "selection": "Nine broad household aggregates, chosen to cover six domains and illustrate item-specific denominators; not a full thesis dataset.",
+  "pdf_redistributed": false
+}

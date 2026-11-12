@@ -1,0 +1,10 @@
+indicator_id,domain,label_en,label_ar,numerator,denominator,reported_pct,source_table,printed_page,pdf_page
+shelter_unfit,Shelter and thermal conditions,Rated current shelter unfit for living,وصفت الأسرة مأواها الحالي بأنه غير صالح للعيش,214,302,70.9,Table 4.2,73,90
+thermal_extreme_always,Shelter and thermal conditions,Always experienced extreme heat or cold inside shelter,أفادت الأسرة بأنها تعاني دائمًا من الحر أو البرد الشديد داخل المأوى,111,302,36.8,Table 4.2,73,90
+dignity_privacy_insufficient,"Space, dignity and privacy",Shelter did not sufficiently preserve dignity and privacy,أفادت الأسرة بأن المأوى لا يحفظ الكرامة والخصوصية بدرجة كافية,224,302,74.2,Table 4.3,74,91
+toilet_shared,Sanitation and immediate environment,Reported sharing toilet facility with other households,أفادت الأسرة بأنها تتشارك المرحاض مع أسر أخرى,196,302,64.9,Table 4.6,77,94
+greywater_nuisance_sometimes,Sanitation and immediate environment,Sometimes reported nuisance when reusing greywater,أفادت الأسرة بوجود إزعاج أحيانًا عند إعادة استخدام المياه الرمادية,77,131,58.8,"Section 4.5, text; Table 4.6 note on page 77",76,93
+night_lighting_unavailable,Electricity continuity,No nighttime lighting inside shelter,أفادت الأسرة بعدم توافر إضاءة ليلية داخل المأوى,135,302,44.7,Table 4.7,82,99
+material_barrier,Repairability and incremental adaptation,Lack of materials was the largest reported obstacle to improving the dwelling,اختارت الأسرة نقص المواد بوصفه أكبر عائق أمام تحسين المأوى,121,302,40.1,"Section 4.7, paragraph on obstacles",79,96
+storage_below250,Water storage,Reported Q36 storage capacity below 250 L,أفادت الأسرة بأن سعة التخزين في السؤال 36 أقل من 250 لترًا,117,297,39.4,Table 4.7; see pp. 81 and 83 for wording and exclusions,82,99
+drinking_storage_below250,Water storage,Reported drinking-water storage capacity below 250 L,أفادت الأسرة بأن سعة تخزين مياه الشرب أقل من 250 لترًا,265,279,95.0,Table 4.7; see pp. 81 and 83 for exclusions,82,99

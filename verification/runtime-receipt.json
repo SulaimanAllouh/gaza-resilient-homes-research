@@ -1,0 +1,48 @@
+{
+  "record_type": "Research software runtime verification receipt",
+  "summary_ar": "اجتاز الإصدار المرشّح اختبارات R على سيرفر التطوير. يشمل التحقق المؤشرات المجمّعة التسعة والمثال الاصطناعي المنفصل.",
+  "date": "2026-11-11",
+  "release": {
+    "version": "0.1.0-rc.1",
+    "file": "Gaza_Resilient_Homes_R_v0.1.0-rc.1.zip",
+    "sha256": "f7d1ee93a7a99d93e48b72611e68c55ec2984503ef8be7b4e035fdceb7e752ed"
+  },
+  "test_kit": {
+    "file": "V22_R_Docker_Run_v1.zip",
+    "sha256": "4bbff459fed1098af61728e70dbb5dee36edda51dd29186c1a91261286a37a4f"
+  },
+  "evidence_source": "Operator-supplied terminal summary from the development server. The kit and contained research archive matched the recorded SHA-256 values on review. Full server logs and output-file hashes were not independently retrieved for this receipt.",
+  "run_id": "run-20261111T140239624452Z-qj7sr6w7",
+  "console_fields": {
+    "V22_R_DOCKER": "PASS",
+    "STAGE": "complete",
+    "R_VERSION": "4.4.2",
+    "R_TESTS": "PASS",
+    "AGGREGATE_ROWS": 9,
+    "SYNTHETIC_CHECK": "PASS",
+    "IMAGE_ID": "sha256:df26749182af64d5263bf64149d51a427b476ed28c4e046997143be3f97fdd7c"
+  },
+  "image": {
+    "requested_tag": "rocker/r-ver:4.4.2",
+    "id_kind": "local Docker image ID; not a registry digest"
+  },
+  "verification_scope": {
+    "commands": [
+      "Rscript --vanilla tests/check.R",
+      "Rscript --vanilla scripts/build_aggregates.R",
+      "Rscript --vanilla scripts/run_synthetic.R",
+      "Rscript --vanilla .operator/accept-output.R"
+    ],
+    "coverage": "Release arithmetic and aggregate outputs for nine indicators, report labels in Arabic and English, and eight expected counts on the seven-row synthetic fixture.",
+    "excluded": "No original household-level records or historical inferential analyses were rerun. This receipt records no public deployment or publication."
+  },
+  "relative_evidence_locations": {
+    "basis": "Relative to the run directory printed by the development server.",
+    "machine_record": "status.json",
+    "short_summary": "result.txt",
+    "r_log": "R-run.log",
+    "session_info": "gaza-resilient-homes/outputs/session-info.txt",
+    "generated_report": "gaza-resilient-homes/outputs/aggregate-report.html"
+  },
+  "archive_policy": "Supplemental verification for the exact frozen archive; no release contents have been replaced."
+}

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Cite this version when using the software, aggregate tables or reports. Cite the V22 thesis and its table or page for empirical findings."
+type: software
+title: "Gaza Resilient Homes Research: selected household indicators"
+version: "0.1.0"
+authors:
+  - family-names: "Allouh"
+    given-names: "Sulaiman M. S."
+repository-code: "https://github.com/SulaimanAllouh/gaza-resilient-homes-research"
+references:
+  - type: thesis
+    title: "A Practical Framework for Building Resilient and Sustainable Homes in War-Affected Regions: A Gaza Case Study"
+    authors:
+      - family-names: "Allouh"
+        given-names: "Sulaiman M. S."
+    year: 2026
+    institution:
+      name: "The Islamic University–Gaza"

@@ -1,0 +1,10 @@
+# Run: Rscript scripts/build_aggregates.R
+script_arg <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+root <- if (length(script_arg)) normalizePath(file.path(dirname(sub("^--file=", "", script_arg[1])), "..")) else getwd()
+source(file.path(root, "R", "research_release.R"), encoding = "UTF-8")
+x <- check_aggregates(read_release_csv(file.path(root, "data", "published_aggregates.csv")))
+out <- file.path(root, "outputs")
+dir.create(out, showWarnings = FALSE, recursive = TRUE)
+write_release_csv(x, file.path(out, "aggregate-check.csv"))
+write_aggregate_report(x, file.path(out, "aggregate-report.html"))
+message("Checked ", nrow(x), " aggregate rows; see outputs/aggregate-report.html and outputs/aggregate-check.csv.")
