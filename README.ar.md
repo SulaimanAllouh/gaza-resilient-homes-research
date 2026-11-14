@@ -10,10 +10,10 @@
 
 [تنزيل حزمة gazahomes 0.0.1](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/download/gazahomes-v0.0.1/gazahomes_0.0.1.tar.gz) · [الإصدار وسجل الفحص](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/tag/gazahomes-v0.0.1) · [دليل التثبيت](docs/gazahomes/release-0.0.1.md) · [الاستشهاد بالحزمة (BibTeX)](docs/gazahomes/CITATION-0.0.1.bib)
 
-نزّل الملف `gazahomes_0.0.1.tar.gz`، ثم شغّل الأوامر التالية في نافذة R واختر الملف عند الطلب. يتحقق المثال من النسب التسع، ثم يعرض أعداد مؤشر سعة تخزين مياه الشرب:
+ثبّت الحزمة من [صفحتها على R-universe](https://sulaimanallouh.r-universe.dev/gazahomes) بالأمر الأول، ثم تحقّق من النسب التسع واعرض أعداد مؤشر سعة تخزين مياه الشرب. وإذا حفظت ملف الحزمة من GitHub، فيمكنك [تثبيته دون اتصال](docs/gazahomes/release-0.0.1.md).
 
 ```r
-install.packages(file.choose(), repos = NULL, type = "source")
+install.packages("gazahomes", repos = "https://sulaimanallouh.r-universe.dev")
 x <- gazahomes::check_indicators()
 stopifnot(nrow(x) == 9L, all(x$ok))
 x[x$indicator_id == "drinking_storage_below250",

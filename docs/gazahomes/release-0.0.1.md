@@ -4,7 +4,13 @@
 
 ## Install and reproduce one result
 
-Download the exact source archive named `gazahomes_0.0.1.tar.gz` and install it locally in R:
+For installation from the [public R-universe repository](https://sulaimanallouh.r-universe.dev/gazahomes), run:
+
+```r
+install.packages("gazahomes", repos = "https://sulaimanallouh.r-universe.dev")
+```
+
+Alternatively, to work offline, download [the tested source archive](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/download/gazahomes-v0.0.1/gazahomes_0.0.1.tar.gz) first, then choose it from R:
 
 ```r
 install.packages(file.choose(), repos = NULL, type = "source")
@@ -25,6 +31,10 @@ The owner’s 12 November 2026 development-server receipt records an offline `R 
 |---|---|
 | gazahomes_0.0.1.tar.gz | `6680da74fa3b5967f9e799c44622e2c4be0e35629154017d8822c131b643b0f3` |
 | 00check.log | `08c3959f37da09c7992fd5904d672ea632d4564e673cbbb4e59ba40fdd0b8176` |
+
+## Public installation verification
+
+On 12 November 2026, the [R-universe build](https://github.com/r-universe/sulaimanallouh/actions/runs/43228755647) deployed the package after checks on Linux, Windows, macOS and WebAssembly. A [separate R 4.4.2 session](https://github.com/SulaimanAllouh/sulaimanallouh.r-universe.dev/actions/runs/43229167694/job/131219701903) installed the source from the public R-universe index into an empty library and reproduced the nine checks, including 265/279 for drinking-water storage and 23 unknown responses. The SHA-256 above identifies the GitHub release archive; the repository builds its own distribution from the same tagged source.
 
 ## Citation
 

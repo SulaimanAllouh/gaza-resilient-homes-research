@@ -10,10 +10,10 @@ For example, 265 households reported drinking-water storage below 250 litres. Of
 
 [Download gazahomes 0.0.1](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/download/gazahomes-v0.0.1/gazahomes_0.0.1.tar.gz) · [Package release and check log](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/tag/gazahomes-v0.0.1) · [Installation guide](docs/gazahomes/release-0.0.1.md) · [Cite the software (BibTeX)](docs/gazahomes/CITATION-0.0.1.bib)
 
-Install the downloaded `gazahomes_0.0.1.tar.gz` from the R console, then check the nine published percentages:
+Install from [Sulaiman Allouh’s R-universe](https://sulaimanallouh.r-universe.dev/gazahomes), then check the nine published percentages. For offline installation from a saved GitHub archive, use the [installation guide](docs/gazahomes/release-0.0.1.md).
 
 ```r
-install.packages(file.choose(), repos = NULL, type = "source")
+install.packages("gazahomes", repos = "https://sulaimanallouh.r-universe.dev")
 x <- gazahomes::check_indicators()
 stopifnot(nrow(x) == 9L, all(x$ok))
 x[x$indicator_id == "drinking_storage_below250",
