@@ -38,8 +38,10 @@ On 12 November 2026, the [R-universe build](https://github.com/r-universe/sulaim
 
 ## Citation
 
-When using the R package, cite: **Allouh, S. M. S. (2026). *gazahomes: Explore Published Household Indicators from a Gaza Housing Study* (R package version 0.0.1).** [BibTeX](CITATION-0.0.1.bib).
+Allouh, S. M. S. (2026). gazahomes: Explore Published Household Indicators from a Gaza Housing Study (Version 0.0.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24526526
+
+Import the [BibTeX](CITATION-0.0.1.bib), [CFF](CITATION-0.0.1.cff) or [RIS](CITATION-0.0.1.ris) record, or copy the [plain-text reference](CITATION-0.0.1.txt). See the [citation guide](../access-and-citation.md) for the all-versions DOI and the companion reference.
 
 The `citation("gazahomes")` entries in the verified archive identify the [research companion v0.1.0](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/tag/v0.1.0) and the 2026 thesis. Cite the thesis table and page for an empirical finding. The package README and NOTICE retain the candidate wording from the checked build; no package files were changed after verification.
 
-**بالعربية:** عند استخدام الدوال، استشهد بحزمة `gazahomes` وإصدارها `0.0.1`. وعند نقل نتيجة عن الأسر، أضف إحالة إلى جدول الرسالة وصفحته. ملف البيانات وقاموسه مطابقان للمادة المنشورة في الإصدار البحثي `v0.1.0`.
+**بالعربية:** عند استخدام الدوال، استشهد بحزمة `gazahomes` وإصدارها `0.0.1` مع [المعرّف الرقمي لهذا الإصدار](https://doi.org/10.5281/zenodo.24526526). وعند نقل نتيجة عن الأسر، أضف إحالة إلى جدول الرسالة وصفحته. ملف البيانات وقاموسه مطابقان للمادة المنشورة في الإصدار البحثي `v0.1.0`.

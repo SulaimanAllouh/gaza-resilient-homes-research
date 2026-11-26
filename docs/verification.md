@@ -17,4 +17,8 @@ The runtime receipt was prepared from the operator-supplied terminal summary. Th
 
 From the project root run the three commands in the [README](../README.md). These commands write the rebuilt report and aggregate-check CSV to `outputs/` and keep the synthetic summary separate. To repeat the additional acceptance checks under R 4.4.2 in a UTF-8 locale, then run `Rscript --vanilla verification/accept-output.R` from that same directory. [The checker](../verification/accept-output.R) records the R version and session information in `outputs/`. You can compare generated output with the [returned report](../preview/verified-r-report.html).
 
-To check the files distributed with the release on a system with GNU coreutils, run `sha256sum -c SHA256SUMS` from the project root. A matching hash shows that a file matches the identified bytes; it does not itself verify source responses or grant access to private materials.
+## Which checksums apply
+
+For companion **v0.1.0**, extract the ZIP attached to the [companion release](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/tag/v0.1.0). In the extracted directory containing `SHA256SUMS`, run `sha256sum -c SHA256SUMS` using GNU coreutils. The root manifest records the files in that published companion. Later documentation on the default branch is identified by its Git commit.
+
+For package **0.0.1**, download the source tarball, check log and separate `SHA256SUMS` attached to the [package release](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/tag/gazahomes-v0.0.1). Run the same command in their directory. The [Zenodo version record](https://doi.org/10.5281/zenodo.24526526) also distributes this tarball. Its SHA-256 is `6680da74fa3b5967f9e799c44622e2c4be0e35629154017d8822c131b643b0f3`.

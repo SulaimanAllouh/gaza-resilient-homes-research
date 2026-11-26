@@ -12,9 +12,17 @@ The table and pages in that example refer to water-storage capacity. For a diffe
 
 > Allouh, S. M. S. (2026). *Gaza Resilient Homes Research: selected household indicators* (Version 0.1.0) [Research software and aggregate tables].
 
-[CITATION.cff](../CITATION.cff) identifies this software companion and separately references its thesis source. When referencing a public copy, include the URL of the version you actually used. No DOI has been assigned in this package.
+[CITATION.cff](../CITATION.cff) identifies this research companion and separately references its thesis source. Include the [v0.1.0 release URL](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/tag/v0.1.0) when citing that version.
 
 For reuse of covered materials, follow the [license map](../LICENSE.md). An attribution for an adapted chart can identify Sulaiman M. S. Allouh, *Gaza Resilient Homes Research*, version 0.1.0, link to the source and CC BY 4.0, and say what changed (for example, “Arabic labels shortened for display”). Rights in the presentation or compilation of the material do not create exclusive rights in every underlying fact.
+
+## Citing the gazahomes R package
+
+Allouh, S. M. S. (2026). gazahomes: Explore Published Household Indicators from a Gaza Housing Study (Version 0.0.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24526526
+
+Download the citation as [CFF](gazahomes/CITATION-0.0.1.cff), [BibTeX](gazahomes/CITATION-0.0.1.bib), [RIS](gazahomes/CITATION-0.0.1.ris) or [plain text](gazahomes/CITATION-0.0.1.txt).
+
+Use the [version DOI](https://doi.org/10.5281/zenodo.24526526) for analyses using gazahomes 0.0.1. The [all-versions DOI](https://doi.org/10.5281/zenodo.24526525) identifies the package across versions. Zenodo archives the source tarball from the [gazahomes-v0.0.1 release](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/tag/gazahomes-v0.0.1).
 
 ## Participant data and source materials
 
