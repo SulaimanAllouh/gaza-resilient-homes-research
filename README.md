@@ -22,6 +22,8 @@ x[x$indicator_id == "drinking_storage_below250",
 
 The last line returns 265, 279, 23 and 95.0% for the storage example above. Use `gazahomes::home_dictionary()` for the bilingual definitions and source pointers. Use version **0.0.1** when citing the R package and **0.1.0** when citing the research companion.
 
+The Zenodo archive for gazahomes 0.0.1 has the version DOI [10.5281/zenodo.24526526](https://doi.org/10.5281/zenodo.24526526). The [citation guide](docs/access-and-citation.md) gives the software citation in four formats. For the companion, use the [v0.1.0 release](https://github.com/SulaimanAllouh/gaza-resilient-homes-research/releases/tag/v0.1.0) and the [companion citation](CITATION.cff).
+
 ## Explore the findings
 
 | What you want to do | File |
